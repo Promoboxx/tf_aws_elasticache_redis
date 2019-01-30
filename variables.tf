@@ -99,6 +99,6 @@ variable "tags" {
 
 variable "snapshot_arn" {
   type        = "list"
-  description = "S3 ARN of a snapshot .rdb file to see the new instance with.  Make sure the object in S3 allows Elasticache to read via object ACL's, per AWS documentation"
+  description = "List with a single S3 ARN of a snapshot .rdb file to seed the new instance with.  Make sure the object in S3 allows Elasticache to read via object ACL's, per AWS documentation"
   default     = []
 }
