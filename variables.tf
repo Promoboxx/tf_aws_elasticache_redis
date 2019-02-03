@@ -96,3 +96,9 @@ variable "tags" {
   description = "tags to add to these resources tags (e.g. `map('Team','XYZ')`"
   default     = {}
 }
+
+variable "snapshot_arn" {
+  type        = "list"
+  description = "List with a single S3 ARN of a snapshot .rdb file to seed the new instance with.  Make sure the object in S3 allows Elasticache to read via object ACL's, per AWS documentation"
+  default     = []
+}
